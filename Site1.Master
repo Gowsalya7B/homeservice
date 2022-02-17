@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="HomeServiceProvider.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+<span style="font-family: Tahoma"><span style="font-size: 10pt"><strong><span style="font-size: 11pt;
+color: #ff3300"><span style="color: #ff0000; text-decoration: underline">Our 
+Products:</span><br />
+</span>
+<br />
+</strong>Autograph offer a wide range of luxury and sport cars to meet any needs. View
+our fleet below:<br />
+&nbsp;<br />
+<asp:GridView ID="service" runat="server" AutoGenerateColumns="False" 
+ DataSourceID="SqlDataSource1" Height="101px" Width="672px" 
+AllowPaging="True" CellPadding="4" Font-Names="Tahoma" 
+GridLines="None" HorizontalAlign="Center" PageSize="4" ForeColor="#333333" 
+BorderColor="White" BorderStyle="None" CellSpacing="1" DataKeyNames="WorkId" >
+<Columns>
+<asp:BoundField DataField="WorkId" HeaderText="WorkId" SortExpression="WorkId" 
+        ReadOnly="True"/>
+
+<asp:BoundField DataField="Work" HeaderText="Work" 
+SortExpression="Work"/>
+<asp:BoundField DataField="Duration" HeaderText="Duration" 
+SortExpression="Duration" />
+<asp:BoundField DataField="Cost" HeaderText="Cost" 
+SortExpression="Cost" />
+    <asp:BoundField DataField="Images" HeaderText="Images" 
+        SortExpression="Images" />
+</Columns>
+<RowStyle BackColor="#FFFBD6" BorderStyle="Solid" Font-Names="Tahoma" ForeColor="#333333"
+HorizontalAlign="Center" />
+    <EmptyDataTemplate>
+        <asp:Button ID="addtocart" runat="server" onclick="addtocart_Click" 
+            Text="Add To Cart" />
+    </EmptyDataTemplate>
+<FooterStyle BackColor="#990000" BorderStyle="Solid" Font-Names="Tahoma" ForeColor="White"
+HorizontalAlign="Right" Font-Bold="True" />
+<PagerStyle BackColor="#FFCC66" BorderStyle="Solid" Font-Names="Tahoma" HorizontalAlign="Right" ForeColor="#333333" />
+<SelectedRowStyle BackColor="#FFCC66" BorderStyle="Solid" Font-Names="Tahoma" ForeColor="Navy"
+HorizontalAlign="Center" Font-Bold="True" />
+<HeaderStyle BackColor="#990000" BorderStyle="Solid" Font-Bold="True" Font-Names="Tahoma"
+ForeColor="White" HorizontalAlign="Center" />
+<EditRowStyle BorderStyle="None" Font-Names="Tahoma" HorizontalAlign="Center" />
+<AlternatingRowStyle BackColor="White" BorderStyle="Solid" Font-Names="Tahoma"
+HorizontalAlign="Center" />
+</asp:GridView>
+</span></span>
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:gowsiConnectionString10 %>"
+SelectCommand="select *from installation1"  ProviderName="<%$ ConnectionStrings:gowsiConnectionString10.ProviderName %>">
+</asp:SqlDataSource>
+<br />
+
+
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

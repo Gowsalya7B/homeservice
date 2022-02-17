@@ -1,0 +1,911 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6BDCB59-F617-4B61-AB5A-182F68EF5B77}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HomeServiceProvider</RootNamespace>
+    <AssemblyName>HomeServiceProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Code 333 with itextsharp in asp.net\Code 333 with itextsharp in asp.net\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.99, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Addtocart1.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="adminlogin.aspx" />
+    <Content Include="assembly.aspx" />
+    <Content Include="bookdetails.aspx" />
+    <Content Include="bookform.aspx" />
+    <Content Include="bookform2e.aspx" />
+    <Content Include="bookformc1.aspx" />
+    <Content Include="bookformc10.aspx" />
+    <Content Include="bookformc2.aspx" />
+    <Content Include="bookformc3.aspx" />
+    <Content Include="bookformc4.aspx" />
+    <Content Include="bookformc5.aspx" />
+    <Content Include="bookformc6.aspx" />
+    <Content Include="bookformc7.aspx" />
+    <Content Include="bookformc8.aspx" />
+    <Content Include="bookformc9.aspx" />
+    <Content Include="bookformE1.aspx" />
+    <Content Include="bookformE10.aspx" />
+    <Content Include="bookformE3.aspx" />
+    <Content Include="bookformE4.aspx" />
+    <Content Include="bookformE5.aspx" />
+    <Content Include="bookformE6.aspx" />
+    <Content Include="bookformE7.aspx" />
+    <Content Include="bookformE8.aspx" />
+    <Content Include="bookformE9.aspx" />
+    <Content Include="bookformp10.aspx" />
+    <Content Include="bookformp2.aspx" />
+    <Content Include="bookformp3.aspx" />
+    <Content Include="bookformp4.aspx" />
+    <Content Include="bookformp5.aspx" />
+    <Content Include="bookformp6.aspx" />
+    <Content Include="bookformp7.aspx" />
+    <Content Include="bookformp8.aspx" />
+    <Content Include="bookformp9.aspx" />
+    <Content Include="bookformpn1.aspx" />
+    <Content Include="bookformpn10.aspx" />
+    <Content Include="bookformpn2.aspx" />
+    <Content Include="bookformpn3.aspx" />
+    <Content Include="bookformpn4.aspx" />
+    <Content Include="bookformpn5.aspx" />
+    <Content Include="bookformpn6.aspx" />
+    <Content Include="bookformpn7.aspx" />
+    <Content Include="bookformpn8.aspx" />
+    <Content Include="bookformpn9.aspx" />
+    <Content Include="carpenterbookingdetails.aspx" />
+    <Content Include="Carpenterg.aspx" />
+    <Content Include="carpenterpaymentdetails.aspx" />
+    <Content Include="electrician.aspx" />
+    <Content Include="electricianbookingdetails.aspx" />
+    <Content Include="Electriciang.aspx" />
+    <Content Include="electricianpaymentdetails.aspx" />
+    <Content Include="el_electricitybreakdown.aspx" />
+    <Content Include="el_electricitywiring.aspx" />
+    <Content Include="el_installation.aspx" />
+    <Content Include="el_repair.aspx" />
+    <Content Include="home1.aspx" />
+    <Content Include="home2.aspx" />
+    <Content Include="hspimages\1579278450719-4969f927-3bdf-4108-9ba5-ed2f643e12f3_.jpg" />
+    <Content Include="hspimages\App-login-manager-icon.png" />
+    <Content Include="hspimages\diy-932183_960_720.jpg" />
+    <Content Include="hspimages\hammer-2044473_960_720.jpg" />
+    <Content Include="hspimages\handymen-3091826_960_720.jpg" />
+    <Content Include="hspimages\home-1429504_960_720.png" />
+    <Content Include="hspimages\Home-Security-In-High-Wycombe.jpg" />
+    <Content Include="hspimages\How-to-Choose-a-Home-Security-System_Featured-1.jpg" />
+    <Content Include="hspimages\images%2820%29.jpeg" />
+    <Content Include="hspimages\images%2821%29.jpeg" />
+    <Content Include="hspimages\images%2822%29.jpeg" />
+    <Content Include="hspimages\images%2823%29.jpeg" />
+    <Content Include="hspimages\IMG_20191229_120516.jpg" />
+    <Content Include="hspimages\is %281%29.jfif" />
+    <Content Include="hspimages\is %282%29.jfif" />
+    <Content Include="hspimages\is.jfif" />
+    <Content Include="hspimages\login-icon-3047.png" />
+    <Content Include="hspimages\login-icon-3048.png" />
+    <Content Include="hspimages\login-icon-3059.png" />
+    <Content Include="hspimages\login-icon.png" />
+    <Content Include="hspimages\offer-tag.gif" />
+    <Content Include="hspimages\Picture1.png" />
+    <Content Include="hspimages\Picture2.png" />
+    <Content Include="hspimages\SAVE_20191229_194412.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194419.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194458.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194526.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194535.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194543.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194552.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194601.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194609.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194619.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194628.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194636.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194647.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194654.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194700.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194706.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194712.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194720.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194725.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194733.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194752.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194759.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194806.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194813.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194820.jpg" />
+    <Content Include="hspimages\SAVE_20191229_194830.jpg" />
+    <Content Include="hspimages\SAVE_20191231_124808.jpg" />
+    <Content Include="hspimages\SAVE_20191231_124817.jpg" />
+    <Content Include="hspimages\SAVE_20191231_124826.jpg" />
+    <Content Include="hspimages\SAVE_20191231_124833.jpg" />
+    <Content Include="hspimages\SAVE_20191231_124838.jpg" />
+    <Content Include="hspimages\SAVE_20191231_124914.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191320.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191328.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191334.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191340.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191350.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191357.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191403.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191411.jpg" />
+    <Content Include="hspimages\SAVE_20200221_191417.jpg" />
+    <Content Include="hspimages\screwdrivers-1073515_960_720.jpg" />
+    <Content Include="hspimages\special-offer-1.gif" />
+    <Content Include="hspimages\th %281%29.jfif" />
+    <Content Include="hspimages\tool-1957451_960_720.jpg" />
+    <Content Include="loginforpay.aspx" />
+    <Content Include="loginpay2.aspx" />
+    <Content Include="loginpay3.aspx" />
+    <Content Include="loginpay4.aspx" />
+    <Content Include="painterbookingdetails.aspx" />
+    <Content Include="Painterg.aspx" />
+    <Content Include="painterpaymentdetails.aspx" />
+    <Content Include="painting.aspx" />
+    <Content Include="Payment1.aspx" />
+    <Content Include="Payment2.aspx" />
+    <Content Include="Payment3.aspx" />
+    <Content Include="Payment4.aspx" />
+    <Content Include="paymentdetails.aspx" />
+    <Content Include="plumberbookingdetails.aspx" />
+    <Content Include="Plumberg.aspx" />
+    <Content Include="plumberpaymentdetails.aspx" />
+    <Content Include="pl_Pipe.aspx" />
+    <Content Include="pl_repair.aspx" />
+    <Content Include="pl_WaterLeakage.aspx" />
+    <Content Include="Styles\registercss.css" />
+    <Content Include="Styles\logincss.css" />
+    <Content Include="myhomepage.aspx" />
+    <Content Include="hspimages\paint-roller-24246_960_720.png" />
+    <Content Include="hspimages\paintbrush-4577577_960_720.jpg" />
+    <Content Include="hspimages\paintbrush-4577578_960_720.jpg" />
+    <Content Include="hspimages\painter-4116622_960_720.jpg" />
+    <Content Include="hspimages\painting-1744956_960_720.jpg" />
+    <Content Include="hspimages\plumbing-1002110_960_720.jpg" />
+    <Content Include="plumber.aspx" />
+    <Content Include="Styles\myStyleSheet.css" />
+    <Content Include="Styles\StyleSheet.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="hspimages\tools-1336527_960_720.jpg" />
+    <Content Include="userregister.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Addtocart1.aspx.cs">
+      <DependentUpon>Addtocart1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addtocart1.aspx.designer.cs">
+      <DependentUpon>Addtocart1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assembly.aspx.cs">
+      <DependentUpon>assembly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assembly.aspx.designer.cs">
+      <DependentUpon>assembly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookdetails.aspx.cs">
+      <DependentUpon>bookdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookdetails.aspx.designer.cs">
+      <DependentUpon>bookdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookform.aspx.cs">
+      <DependentUpon>bookform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookform.aspx.designer.cs">
+      <DependentUpon>bookform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookform2e.aspx.cs">
+      <DependentUpon>bookform2e.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookform2e.aspx.designer.cs">
+      <DependentUpon>bookform2e.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc1.aspx.cs">
+      <DependentUpon>bookformc1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc1.aspx.designer.cs">
+      <DependentUpon>bookformc1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc10.aspx.cs">
+      <DependentUpon>bookformc10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc10.aspx.designer.cs">
+      <DependentUpon>bookformc10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc2.aspx.cs">
+      <DependentUpon>bookformc2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc2.aspx.designer.cs">
+      <DependentUpon>bookformc2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc3.aspx.cs">
+      <DependentUpon>bookformc3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc3.aspx.designer.cs">
+      <DependentUpon>bookformc3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc4.aspx.cs">
+      <DependentUpon>bookformc4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc4.aspx.designer.cs">
+      <DependentUpon>bookformc4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc5.aspx.cs">
+      <DependentUpon>bookformc5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc5.aspx.designer.cs">
+      <DependentUpon>bookformc5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc6.aspx.cs">
+      <DependentUpon>bookformc6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc6.aspx.designer.cs">
+      <DependentUpon>bookformc6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc7.aspx.cs">
+      <DependentUpon>bookformc7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc7.aspx.designer.cs">
+      <DependentUpon>bookformc7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc8.aspx.cs">
+      <DependentUpon>bookformc8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc8.aspx.designer.cs">
+      <DependentUpon>bookformc8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformc9.aspx.cs">
+      <DependentUpon>bookformc9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformc9.aspx.designer.cs">
+      <DependentUpon>bookformc9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE1.aspx.cs">
+      <DependentUpon>bookformE1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE1.aspx.designer.cs">
+      <DependentUpon>bookformE1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE10.aspx.cs">
+      <DependentUpon>bookformE10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE10.aspx.designer.cs">
+      <DependentUpon>bookformE10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE3.aspx.cs">
+      <DependentUpon>bookformE3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE3.aspx.designer.cs">
+      <DependentUpon>bookformE3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE4.aspx.cs">
+      <DependentUpon>bookformE4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE4.aspx.designer.cs">
+      <DependentUpon>bookformE4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE5.aspx.cs">
+      <DependentUpon>bookformE5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE5.aspx.designer.cs">
+      <DependentUpon>bookformE5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE6.aspx.cs">
+      <DependentUpon>bookformE6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE6.aspx.designer.cs">
+      <DependentUpon>bookformE6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE7.aspx.cs">
+      <DependentUpon>bookformE7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE7.aspx.designer.cs">
+      <DependentUpon>bookformE7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE8.aspx.cs">
+      <DependentUpon>bookformE8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE8.aspx.designer.cs">
+      <DependentUpon>bookformE8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformE9.aspx.cs">
+      <DependentUpon>bookformE9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformE9.aspx.designer.cs">
+      <DependentUpon>bookformE9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp10.aspx.cs">
+      <DependentUpon>bookformp10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp10.aspx.designer.cs">
+      <DependentUpon>bookformp10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp2.aspx.cs">
+      <DependentUpon>bookformp2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp2.aspx.designer.cs">
+      <DependentUpon>bookformp2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp3.aspx.cs">
+      <DependentUpon>bookformp3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp3.aspx.designer.cs">
+      <DependentUpon>bookformp3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp4.aspx.cs">
+      <DependentUpon>bookformp4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp4.aspx.designer.cs">
+      <DependentUpon>bookformp4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp5.aspx.cs">
+      <DependentUpon>bookformp5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp5.aspx.designer.cs">
+      <DependentUpon>bookformp5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp6.aspx.cs">
+      <DependentUpon>bookformp6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp6.aspx.designer.cs">
+      <DependentUpon>bookformp6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp7.aspx.cs">
+      <DependentUpon>bookformp7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp7.aspx.designer.cs">
+      <DependentUpon>bookformp7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp8.aspx.cs">
+      <DependentUpon>bookformp8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp8.aspx.designer.cs">
+      <DependentUpon>bookformp8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformp9.aspx.cs">
+      <DependentUpon>bookformp9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformp9.aspx.designer.cs">
+      <DependentUpon>bookformp9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn1.aspx.cs">
+      <DependentUpon>bookformpn1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn1.aspx.designer.cs">
+      <DependentUpon>bookformpn1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn10.aspx.cs">
+      <DependentUpon>bookformpn10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn10.aspx.designer.cs">
+      <DependentUpon>bookformpn10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn2.aspx.cs">
+      <DependentUpon>bookformpn2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn2.aspx.designer.cs">
+      <DependentUpon>bookformpn2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn3.aspx.cs">
+      <DependentUpon>bookformpn3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn3.aspx.designer.cs">
+      <DependentUpon>bookformpn3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn4.aspx.cs">
+      <DependentUpon>bookformpn4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn4.aspx.designer.cs">
+      <DependentUpon>bookformpn4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn5.aspx.cs">
+      <DependentUpon>bookformpn5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn5.aspx.designer.cs">
+      <DependentUpon>bookformpn5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn6.aspx.cs">
+      <DependentUpon>bookformpn6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn6.aspx.designer.cs">
+      <DependentUpon>bookformpn6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn7.aspx.cs">
+      <DependentUpon>bookformpn7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn7.aspx.designer.cs">
+      <DependentUpon>bookformpn7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn8.aspx.cs">
+      <DependentUpon>bookformpn8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn8.aspx.designer.cs">
+      <DependentUpon>bookformpn8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookformpn9.aspx.cs">
+      <DependentUpon>bookformpn9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookformpn9.aspx.designer.cs">
+      <DependentUpon>bookformpn9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="carpenterbookingdetails.aspx.cs">
+      <DependentUpon>carpenterbookingdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carpenterbookingdetails.aspx.designer.cs">
+      <DependentUpon>carpenterbookingdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carpenterg.aspx.cs">
+      <DependentUpon>Carpenterg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carpenterg.aspx.designer.cs">
+      <DependentUpon>Carpenterg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="carpenterpaymentdetails.aspx.cs">
+      <DependentUpon>carpenterpaymentdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carpenterpaymentdetails.aspx.designer.cs">
+      <DependentUpon>carpenterpaymentdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="electrician.aspx.cs">
+      <DependentUpon>electrician.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="electrician.aspx.designer.cs">
+      <DependentUpon>electrician.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="electricianbookingdetails.aspx.cs">
+      <DependentUpon>electricianbookingdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="electricianbookingdetails.aspx.designer.cs">
+      <DependentUpon>electricianbookingdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Electriciang.aspx.cs">
+      <DependentUpon>Electriciang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Electriciang.aspx.designer.cs">
+      <DependentUpon>Electriciang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="electricianpaymentdetails.aspx.cs">
+      <DependentUpon>electricianpaymentdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="electricianpaymentdetails.aspx.designer.cs">
+      <DependentUpon>electricianpaymentdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="el_electricitybreakdown.aspx.cs">
+      <DependentUpon>el_electricitybreakdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="el_electricitybreakdown.aspx.designer.cs">
+      <DependentUpon>el_electricitybreakdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="el_electricitywiring.aspx.cs">
+      <DependentUpon>el_electricitywiring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="el_electricitywiring.aspx.designer.cs">
+      <DependentUpon>el_electricitywiring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="el_installation.aspx.cs">
+      <DependentUpon>el_installation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="el_installation.aspx.designer.cs">
+      <DependentUpon>el_installation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="el_repair.aspx.cs">
+      <DependentUpon>el_repair.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="el_repair.aspx.designer.cs">
+      <DependentUpon>el_repair.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="home1.aspx.cs">
+      <DependentUpon>home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home1.aspx.designer.cs">
+      <DependentUpon>home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home2.aspx.cs">
+      <DependentUpon>home2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home2.aspx.designer.cs">
+      <DependentUpon>home2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginforpay.aspx.cs">
+      <DependentUpon>loginforpay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginforpay.aspx.designer.cs">
+      <DependentUpon>loginforpay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpay2.aspx.cs">
+      <DependentUpon>loginpay2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpay2.aspx.designer.cs">
+      <DependentUpon>loginpay2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpay3.aspx.cs">
+      <DependentUpon>loginpay3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpay3.aspx.designer.cs">
+      <DependentUpon>loginpay3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpay4.aspx.cs">
+      <DependentUpon>loginpay4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpay4.aspx.designer.cs">
+      <DependentUpon>loginpay4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myhomepage.aspx.cs">
+      <DependentUpon>myhomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myhomepage.aspx.designer.cs">
+      <DependentUpon>myhomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MySqlDataSet.cs" />
+    <Compile Include="painterbookingdetails.aspx.cs">
+      <DependentUpon>painterbookingdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painterbookingdetails.aspx.designer.cs">
+      <DependentUpon>painterbookingdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Painterg.aspx.cs">
+      <DependentUpon>Painterg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Painterg.aspx.designer.cs">
+      <DependentUpon>Painterg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="painterpaymentdetails.aspx.cs">
+      <DependentUpon>painterpaymentdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painterpaymentdetails.aspx.designer.cs">
+      <DependentUpon>painterpaymentdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="painting.aspx.cs">
+      <DependentUpon>painting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="painting.aspx.designer.cs">
+      <DependentUpon>painting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment1.aspx.cs">
+      <DependentUpon>Payment1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment1.aspx.designer.cs">
+      <DependentUpon>Payment1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment2.aspx.cs">
+      <DependentUpon>Payment2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment2.aspx.designer.cs">
+      <DependentUpon>Payment2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment3.aspx.cs">
+      <DependentUpon>Payment3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment3.aspx.designer.cs">
+      <DependentUpon>Payment3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment4.aspx.cs">
+      <DependentUpon>Payment4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment4.aspx.designer.cs">
+      <DependentUpon>Payment4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paymentdetails.aspx.cs">
+      <DependentUpon>paymentdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paymentdetails.aspx.designer.cs">
+      <DependentUpon>paymentdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plumber.aspx.cs">
+      <DependentUpon>plumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plumber.aspx.designer.cs">
+      <DependentUpon>plumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plumberbookingdetails.aspx.cs">
+      <DependentUpon>plumberbookingdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plumberbookingdetails.aspx.designer.cs">
+      <DependentUpon>plumberbookingdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plumberg.aspx.cs">
+      <DependentUpon>Plumberg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plumberg.aspx.designer.cs">
+      <DependentUpon>Plumberg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plumberpaymentdetails.aspx.cs">
+      <DependentUpon>plumberpaymentdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plumberpaymentdetails.aspx.designer.cs">
+      <DependentUpon>plumberpaymentdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pl_Pipe.aspx.cs">
+      <DependentUpon>pl_Pipe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pl_Pipe.aspx.designer.cs">
+      <DependentUpon>pl_Pipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pl_repair.aspx.cs">
+      <DependentUpon>pl_repair.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pl_repair.aspx.designer.cs">
+      <DependentUpon>pl_repair.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pl_WaterLeakage.aspx.cs">
+      <DependentUpon>pl_WaterLeakage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pl_WaterLeakage.aspx.designer.cs">
+      <DependentUpon>pl_WaterLeakage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userregister.aspx.cs">
+      <DependentUpon>userregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userregister.aspx.designer.cs">
+      <DependentUpon>userregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3800</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
