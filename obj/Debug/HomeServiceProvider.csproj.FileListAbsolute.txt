@@ -1,0 +1,13 @@
+c:\users\elcot\documents\visual studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\HomeServiceProvider.dll
+c:\users\elcot\documents\visual studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\HomeServiceProvider.pdb
+c:\users\elcot\documents\visual studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\obj\Debug\HomeServiceProvider.dll
+c:\users\elcot\documents\visual studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\obj\Debug\HomeServiceProvider.pdb
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\HomeServiceProvider.dll
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\HomeServiceProvider.pdb
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\obj\Debug\HomeServiceProvider.dll
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\obj\Debug\HomeServiceProvider.pdb
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\obj\Debug\HomeServiceProvider.csprojResolveAssemblyReference.cache
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\MySql.Data.Entity.dll
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\MySql.Data.dll
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\MySql.Web.dll
+C:\Users\ELCOT\OneDrive\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\bin\itextsharp.dll
