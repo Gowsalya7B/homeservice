@@ -1,0 +1,122 @@
+﻿body
+{
+    font-family: 'lucida grande' , tahoma,verdana,arial,sans-serif;
+}
+#wrapper
+{
+    width:1350px;
+    margin:0 auto;
+    padding:10px;
+    border:5px solid #dedede;
+    background-color:#fff;
+    height:1015px;
+}
+#banner
+{
+    height: 300px;
+    border: 3px solid lightblue;
+    background-image: url('../hspimages/images(20).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navigation
+{
+    text-shadow: 0.1em 0.1em #333;
+    height: 75px;
+    border: 3px soild lightblue;
+    margin-top: 20px;
+    background-image: url('../hspimages/tool-1957451_960_720.jpg');
+}
+#nav
+{
+    list-style:none;
+}
+#nav ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:auto;
+    display:block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav li
+{
+    font-size:24px;
+    float:left;
+    position:relative;
+    width:175px;
+    height:60px;
+    text-align:center;
+}
+#nav li ul li
+{
+    
+    border:3px soild lightblue;
+    padding:10px;
+    display:none;
+    
+}
+#nav li a
+{
+    display: block;
+    color: #0099FF;
+    text-decoration: none;
+    font-family: "Times New Roman" , Times, serif;
+    font-size: 30px;
+}
+#nav li a:hover
+{
+    color: ThreeDShadow;
+    background-color: lightblue;
+    
+}
+#nav li:hover ul li
+{
+    display:block;
+    border-bottom:0.5px solid lightblue;
+    padding:0.5px;
+    
+}
+#nav li:hover ul li:first-child
+{
+    border-top:none;
+}
+#content_area
+{
+    float:left;
+    width: 850px;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    border: 3px solid lightblue;
+    height: 475px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sidebar
+{
+    float: right;
+    width: 447px;
+    height: 500px;
+    margin: 20px 10px 20px 10px;
+    border: 3px solid lightblue;
+    background-image: url('../hspimages/tools-1336527_960_720.jpg');
+}
+
+#footer
+{
+    text-shadow: 0.1em 0.1em #333;
+    clear: both;
+    width: auto;
+    height: 133px;
+    border: 3px solid lightblue;
+    margin-top: 6px;
+    background-image: url('../hspimages/paintbrush-4577578_960_720.jpg');
+    text-align: justify;
+}
+#homecontent
+{
+    width:990px;
+    height:475px;
+}

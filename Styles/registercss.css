@@ -1,0 +1,17 @@
+﻿body {
+}
+h2
+{
+    font-family: 'Javanese Text';
+    color: #996600;
+  
+}
+#myform
+{
+    float: left;
+    width: 850px;
+    height: 537px;
+    font-family: "Courier New" , Courier, monospace;
+    margin-right: 0px;
+    background-image: url('../hspimages/tool-1957451_960_720.jpg');
+}

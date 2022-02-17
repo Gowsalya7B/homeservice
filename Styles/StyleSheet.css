@@ -1,0 +1,111 @@
+﻿body
+{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    background-color: #e9e9e9;
+}
+
+#wrapper
+{
+     width: 1080px; 
+     margin: 0 auto;
+     padding: 10px;
+     border: 5px solid gray;
+     background-color: #fff;
+}
+
+#banner
+{
+    height: 317px;
+    border: 3px solid lightblue;
+    background-image: url('hspimages/SAVE_20191231_124914.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1079px;
+}
+
+#navigation1
+{
+    height: 60px;
+    border: 3px solid lightblue;
+    margin-top: 20px;
+    background-image: url(..hspimages\SAVE_20191229_194813.jpg);
+}
+
+#nav {
+    list-style: none;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: block;
+}
+
+#nav li {
+    font-size: 24px;
+    float: left;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+}
+
+#nav li ul li {
+    background-image: url('C:\Users\ELCOT\Documents\Visual Studio 2010\Projects\HomeServiceProvider\HomeServiceProvider\hspimages\SAVE_20191229_194712.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid green;
+    padding-left: 10px;
+    display: none;
+}
+#nav li a
+{
+    display: block;
+    color: Yellow;
+    text-decoration: none;
+}
+#nav li a:hover
+{
+    color:Green;
+    background-color: lightblue;
+}
+#nav li:hover ul li
+{
+    display:block;
+    border-bottom: 0.5px solid white;
+    padding: 0.5px;
+}
+
+#nav a:hover {
+    color: green;
+}
+
+#content_area
+{
+    float: left;
+    width: 750px;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    border: 3px solid lightblue;
+}
+
+#sidebar
+{
+    float: right;
+    width: 447px;
+    height: 400px;
+    margin: 20px 10px 20px 10px;
+    border: 3px solid lightblue;
+}
+
+#footer
+{
+    clear: both;
+    width: auto;
+    height: 40px;
+    margin-top: 20px;
+    background-image: url('hspimages\SAVE_20191229_194813.jpg');
+    
+}

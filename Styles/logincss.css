@@ -1,0 +1,44 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url('../hspimages/login-icon-3059.png');
+    background-size: cover;
+    font-family: Sans-Serif;
+    background-repeat: no-repeat;
+}
+.loginbox
+{
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 390px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background-color: #CCFFFF;
+}
+.user
+{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    top: -41px;
+    left: 148px;
+    position:absolute;
+}
+h2
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #0099FF;
+}
+
+.txtemail, .txtpass, .btnsubmit
+{
+    width: 100%;
+    margin-bottom: 20px;
+    color: #333300;
+}
